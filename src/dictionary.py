@@ -41,7 +41,7 @@ def statistic_v1_to_v2(data, min_percent, min_success_cnt):
 
 class DictJSONEncoder(json.JSONEncoder):
 
-    def __init__(self, skipkeys, ensure_ascii, check_circular, allow_nan, indent, separators, encoding, default):
+    def __init__(self, skipkeys, ensure_ascii, check_circular, allow_nan, sort_keys, indent, separators, encoding, default):
         json.JSONEncoder.__init__(self, skipkeys=False, ensure_ascii=False, check_circular=False, allow_nan=True,
                                   sort_keys=False, indent=4, separators=(", ", ": "), encoding="utf-8", default=None)
 
