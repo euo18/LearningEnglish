@@ -55,8 +55,8 @@
         Шаблон url по которому можно просмотреть/найте перевод слова в интернете
     */
     ,"internet_dictionary_url": {
-        "EN_RU": "http://slovari.yandex.ru/{word}/en-ru/#lingvo/",
-        "RU_EN": "http://slovari.yandex.ru/{word}/en/#lingvo/"
+       "EN_RU": "https://translate.yandex.ru/?lang=en-ru&text={0}",
+       "RU_EN": "https://translate.yandex.ru/?lang=ru-en&text={0}"
     }
 
 
