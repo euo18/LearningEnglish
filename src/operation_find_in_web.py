@@ -1,5 +1,8 @@
 # -*- coding: utf-8 -*-
 
+import urllib
+from urllib import quote
+
 import webbrowser
 from operation import BaseOperation
 
@@ -13,7 +16,7 @@ class OperationFindInWeb(BaseOperation):
     def execute(self, word, is_rur):
         options = self._cfg["internet_dictionary_url"]
         template = options["RU_EN"] if is_rur else options["EN_RU"]
-        url = template.replace("{word}", word)
+        url = template.format(quote(word.encode('utf-8')))
         webbrowser.open(url)
 
 
